@@ -8,11 +8,19 @@
 import Foundation
 import CoreLocation
 
-struct Location {
+struct Location: Identifiable {
+    
+//    let id = UUID().uuidString
+    
+    var id: String {
+        // logic for create 'id' from name, cityName
+        name + cityName
+    }
+    
     let name: String
     let cityName: String
     let coordinates: CLLocationCoordinate2D
     let description: String
     let imageNames: [String]
-    let linK: String
+    let link: String
 }
