@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485BA61C277AD6D3000264D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485BA61B277AD6D3000264D7 /* Assets.xcassets */; };
+		485BA621277AD907000264D7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485BA620277AD907000264D7 /* Location.swift */; };
+		485BA624277ADAA9000264D7 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485BA623277ADAA9000264D7 /* LocationsDataService.swift */; };
 		48AD2D9F2774373100026299 /* BasicSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AD2D9E2774373100026299 /* BasicSwiftUIApp.swift */; };
 		48AD2DA12774373100026299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AD2DA02774373100026299 /* ContentView.swift */; };
-		48AD2DA32774373500026299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AD2DA22774373500026299 /* Assets.xcassets */; };
 		48AD2DA62774373500026299 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AD2DA52774373500026299 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		485BA61B277AD6D3000264D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		485BA620277AD907000264D7 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		485BA623277ADAA9000264D7 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 		48AD2D9B2774373100026299 /* BasicSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AD2D9E2774373100026299 /* BasicSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSwiftUIApp.swift; sourceTree = "<group>"; };
 		48AD2DA02774373100026299 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		48AD2DA22774373500026299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48AD2DA52774373500026299 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -32,6 +36,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		485BA61D277AD870000264D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		485BA61E277AD87A000264D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				485BA620277AD907000264D7 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		485BA61F277AD882000264D7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		485BA622277ADA72000264D7 /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				485BA623277ADAA9000264D7 /* LocationsDataService.swift */,
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
 		48AD2D922774373100026299 = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +87,11 @@
 			children = (
 				48AD2D9E2774373100026299 /* BasicSwiftUIApp.swift */,
 				48AD2DA02774373100026299 /* ContentView.swift */,
-				48AD2DA22774373500026299 /* Assets.xcassets */,
+				485BA622277ADA72000264D7 /* DataServices */,
+				485BA61E277AD87A000264D7 /* Models */,
+				485BA61D277AD870000264D7 /* Views */,
+				485BA61F277AD882000264D7 /* ViewModels */,
+				485BA61B277AD6D3000264D7 /* Assets.xcassets */,
 				48AD2DA42774373500026299 /* Preview Content */,
 			);
 			path = BasicSwiftUI;
@@ -125,8 +163,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485BA61C277AD6D3000264D7 /* Assets.xcassets in Resources */,
 				48AD2DA62774373500026299 /* Preview Assets.xcassets in Resources */,
-				48AD2DA32774373500026299 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485BA624277ADAA9000264D7 /* LocationsDataService.swift in Sources */,
 				48AD2DA12774373100026299 /* ContentView.swift in Sources */,
+				485BA621277AD907000264D7 /* Location.swift in Sources */,
 				48AD2D9F2774373100026299 /* BasicSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
