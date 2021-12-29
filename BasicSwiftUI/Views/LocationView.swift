@@ -13,8 +13,6 @@ struct LocationView: View {
     
     @EnvironmentObject private var vm: LocationViewModel
     
-    
-    
     var body: some View {
         
         ZStack {
@@ -24,9 +22,24 @@ struct LocationView: View {
             VStack {
                 
                 header
-                .padding()
+                    .padding()
                 
                 Spacer()
+                
+                ZStack {
+                    ForEach(vm.locations) { location in
+                        
+                        if vm.mapLocation == location {
+                            
+                            LocationPreviewView(location: location)
+                                .shadow(color: Color.black.opacity(0.6), radius: 10)
+                                .padding()
+                                .transition(AnyTransition.asymmetric(insertion: AnyTransition.move(edge: Edge.trailing), removal: AnyTransition.move(edge: Edge.leading)))
+                            
+                        }
+                            
+                    }
+                }
             }
         }
     }
